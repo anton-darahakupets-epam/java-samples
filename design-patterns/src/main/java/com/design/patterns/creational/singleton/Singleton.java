@@ -16,7 +16,7 @@ public class Singleton {
             synchronized (Singleton.class) {
                 temp = sc;
                 if (temp == null) {
-                    temp = new Singleton();
+                    sc = new Singleton();
                 }
             }
         }
